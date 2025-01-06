@@ -696,6 +696,7 @@ PRODUCT_PACKAGES += \
     libmtkcutils \
     libmtkhardware_legacy \
     libmtknetutils \
+    libmtkperf_client_vendor \
     libmtkproperty \
     libmtkrillog \
     libmtksysutils \
@@ -849,6 +850,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
+    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx471_mipi_raw1_IdxMgr \
     imx471_mipi_raw1_tuning \
@@ -1426,6 +1428,10 @@ PRODUCT_PACKAGES += \
     liboppo_arcSoftBokehEngine_new \
     liboppo_blank_algo \
     liboppo_platform_hwi \
+    libperfctl_vendor \
+    libpower_timer \
+    libpowerhal \
+    libpowerhalwrap_vendor \
     libratconfig \
     librilfusion \
     libsensor_custom \
@@ -1477,7 +1483,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
-    vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
     vendor.mediatek.hardware.videotelephony@1.0 \
@@ -1491,6 +1496,7 @@ PRODUCT_PACKAGES += \
     libimsma_socketwrapper \
     libmtk_vt_service \
     libmtk_vt_wrapper \
+    libmtkperf_client \
     libsignal \
     libsink \
     libsource \
@@ -1522,6 +1528,8 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     com.android.hotwordenrollment.common.util \
+    vendor.mediatek.hardware.mtkpower@1.0-init \
+    vendor.mediatek.hardware.mtkpower@1.0-service \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     manifest.xml \
@@ -1558,6 +1566,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
     vendor.mediatek.hardware.mtkcodecservice@1.1-service \
+    vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
