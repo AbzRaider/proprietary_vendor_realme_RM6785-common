@@ -586,7 +586,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/realme/RM6785-common/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
@@ -1673,13 +1672,13 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     com.android.hotwordenrollment.common.util \
-    android.hardware.gpu@1.0-service \
-    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    manifest \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    oplus_appradio_device_manifest \
-    oplus_radio_device_manifest \
-    vendor.mediatek.hardware.dplanner@2.0-service \
+    android.hardware.gpu@1.0-service.xml \
+    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
+    manifest.xml \
+    manifest_android.hardware.drm@1.3-service.widevine.xml \
+    oplus_appradio_device_manifest.xml \
+    oplus_radio_device_manifest.xml \
+    vendor.mediatek.hardware.dplanner@2.0-service.xml \
     atcid \
     audiocmdservice_atci \
     autobt \
