@@ -555,7 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
@@ -1617,7 +1616,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.dfps@1.0 \
-    vendor.mediatek.hardware.dplanner@2.0 \
     vendor.mediatek.hardware.engineermode@1.0 \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
@@ -1678,7 +1676,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     oplus_appradio_device_manifest.xml \
     oplus_radio_device_manifest.xml \
-    vendor.mediatek.hardware.dplanner@2.0-service.xml \
     atcid \
     audiocmdservice_atci \
     autobt \
@@ -1687,11 +1684,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     charon \
-    dconfig \
-    dexecutor \
-    doeapp-memtester \
-    doeapp-sat \
-    dtc_vendor \
     em_hidl \
     epdg_wod \
     factory \
@@ -1709,7 +1701,6 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
-    vendor.mediatek.hardware.dplanner@2.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.keyinstall@1.0-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
