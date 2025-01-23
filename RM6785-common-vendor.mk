@@ -825,6 +825,7 @@ PRODUCT_PACKAGES += \
     libwvdrmengine \
     vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.mtkcodecservice@1.1 \
+    APUWareApusysServer \
     APUWareUtilsServer \
     APUWareXrpServer \
     gc02k0_mipi_raw_IdxMgr \
@@ -1490,6 +1491,7 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libapuwareapusys.mtk \
     libcomutils \
     libimsma \
     libimsma_adapt \
