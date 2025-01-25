@@ -357,7 +357,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Vodafone.xml \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
+    vendor/realme/RM6785-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -659,6 +659,7 @@ PRODUCT_PACKAGES += \
     gps.default \
     vendor.mediatek.hardware.keyinstall@1.0-impl \
     vendor.mediatek.hardware.mms@1.5-impl \
+    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.6-impl \
     libOpenCL \
@@ -704,7 +705,11 @@ PRODUCT_PACKAGES += \
     libnvram_daemon_callback \
     libnvram_platform \
     libnvram_sec \
+    libperfctl_vendor \
     libpixelflinger \
+    libpower_timer \
+    libpowerhal \
+    libpowerhalwrap_vendor \
     libpq_cust_base \
     libpq_prot \
     librgbwlightsensor \
@@ -719,6 +724,7 @@ PRODUCT_PACKAGES += \
     libvpu \
     libwo \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keyinstall@1.0 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -834,7 +840,7 @@ PRODUCT_PACKAGES += \
     gc02m0_mipi_mono_tuning \
     gc2375h_mipi_raw_19661_IdxMgr \
     gc2375h_mipi_raw_19661_tuning \
-    android.hardware.bluetooth@1.0-impl-mediatek \
+    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     dfps.mt6785 \
@@ -844,6 +850,7 @@ PRODUCT_PACKAGES += \
     libSoftGatekeeper \
     sensors.mt6785 \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
+    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
@@ -851,7 +858,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx471_mipi_raw1_IdxMgr \
     imx471_mipi_raw1_tuning \
@@ -1429,10 +1435,6 @@ PRODUCT_PACKAGES += \
     liboppo_arcSoftBokehEngine_new \
     liboppo_blank_algo \
     liboppo_platform_hwi \
-    libperfctl_vendor \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
     libratconfig \
     librilfusion \
     libsensor_custom \
@@ -1506,6 +1508,7 @@ PRODUCT_PACKAGES += \
     libvcodec_cap \
     libvcodec_capenc \
     libvt_avsync \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     liboemcrypto \
@@ -1553,7 +1556,7 @@ PRODUCT_PACKAGES += \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    android.hardware.bluetooth@1.0-service-mediatek \
+    android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
@@ -1608,6 +1611,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.apuware.apusys@1.0_vendor.mediatek.hardware.apuware.apusys@1.0_symlink64 \
     libGLES_mali_vulkan.mt6785_symlink64 \
     kmsetkey.trustonic_kmsetkey.default_symlink64 \
     libMcGatekeeper_gatekeeper.mt6785_symlink64 \
