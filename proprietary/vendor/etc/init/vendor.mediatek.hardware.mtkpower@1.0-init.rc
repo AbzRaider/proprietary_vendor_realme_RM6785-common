@@ -55,6 +55,18 @@ on post-fs-data
     chmod 0664 /dev/cpuset/system-background/prefer_cpu
     chown system system /sys/module/cache_ctrl/parameters/enable
     chmod 0664 /sys/module/cache_ctrl/parameters/enable
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/offline_throttle_ms
+    chmod 0660 /sys/devices/system/cpu/cpu4/core_ctl/offline_throttle_ms
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/offline_throttle_ms
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/offline_throttle_ms
+    chown system system /sys/devices/system/cpu/cpu0/core_ctl/btask_up_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu0/core_ctl/btask_up_thresh
+    chown system system /sys/devices/system/cpu/cpu4/core_ctl/btask_up_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu4/core_ctl/btask_up_thresh
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_degree
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_degree
+    chown system system /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_btask_thresh
+    chmod 0660 /sys/devices/system/cpu/cpu7/core_ctl/cpu_tj_btask_thresh
     chown system system /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us
     chmod 0660 /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us
     chown system system /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us
@@ -285,6 +297,9 @@ on post-fs-data
     chmod 0664 /sys/kernel/ged/hal/dcs_mode
     chown system system /sys/kernel/ged/hal/fw_idle
     chmod 0664 /sys/kernel/ged/hal/fw_idle
+    chown system system /sys/kernel/ged/hal/gpu_boost_level
+    chmod 0664 /sys/kernel/ged/hal/gpu_boost_level
+
 
 # PPM
     chown system system /proc/ppm/policy_status
@@ -309,6 +324,8 @@ on post-fs-data
     chmod 0664 /sys/module/fbt_cpu/parameters/floor_bound
     chown system system /sys/module/fbt_cpu/parameters/kmin
     chmod 0664 /sys/module/fbt_cpu/parameters/kmin
+    chown system system /sys/module/fbt_cpu/parameters/variance
+    chmod 0660 /sys/module/fbt_cpu/parameters/variance
     chown system system /sys/module/mtk_fpsgo/parameters/bhr_opp
     chmod 0664 /sys/module/mtk_fpsgo/parameters/bhr_opp
     chown system system /sys/module/mtk_fpsgo/parameters/bhr
@@ -329,6 +346,8 @@ on post-fs-data
     chmod 0664 /sys/kernel/cm_mgr/dbg_cm_mgr
     chown system system /sys/kernel/fpsgo/minitop/enable
     chmod 0664 /sys/kernel/fpsgo/minitop/enable
+    chown system system /sys/kernel/fpsgo/minitop/thrs_heavy
+    chmod 0664 /sys/kernel/fpsgo/minitop/thrs_heavy
     chown system system /sys/kernel/fpsgo/fstb/fstb_fteh_list
     chmod 0664 /sys/kernel/fpsgo/fstb/fstb_fteh_list
     chown system system /sys/kernel/fpsgo/eara/ai_bench
@@ -493,6 +512,10 @@ on post-fs-data
     chmod 0664 /sys/kernel/gbe/gbe2_timer1
     chown system system /sys/kernel/gbe/gbe_thrm_hdrm_thrs
     chmod 0664 /sys/kernel/gbe/gbe_thrm_hdrm_thrs
+    chown system system /sys/kernel/gbe/gbe_cpu_1
+    chmod 0664 /sys/kernel/gbe/gbe_cpu_1
+    chown system system /sys/kernel/gbe/gbe_cpu_0
+    chmod 0664 /sys/kernel/gbe/gbe_cpu_0
     chown system system /sys/kernel/fpsgo/fbt/switch_idleprefer
     chmod 0664 /sys/kernel/fpsgo/fbt/switch_idleprefer
     chown system system /sys/module/xgf/parameters/xgf_sp_name_id
@@ -533,6 +556,10 @@ on post-fs-data
     chmod 0660 /sys/module/fbt_cpu/parameters/qr_t2wnt_y_p
     chown system system /sys/module/fbt_cpu/parameters/qr_t2wnt_y_n
     chmod 0660 /sys/module/fbt_cpu/parameters/qr_t2wnt_y_n
+    chown system system /sys/module/mtk_fpsgo/parameters/gcc_enable
+    chmod 0664 /sys/module/mtk_fpsgo/parameters/gcc_enable
+    chown system system /sys/module/fbt_cpu/parameters/gcc_enable
+    chmod 0664 /sys/module/fbt_cpu/parameters/gcc_enable
     chown system system /sys/module/fbt_cpu/parameters/gcc_enq_bound_thrs
     chmod 0660 /sys/module/fbt_cpu/parameters/gcc_enq_bound_thrs
     chown system system /sys/module/fbt_cpu/parameters/gcc_enq_bound_quota
@@ -625,12 +652,16 @@ on post-fs-data
     chmod 0660 /sys/kernel/fpsgo/fstb/fstb_self_ctrl_fps_enable
     chown system system /sys/module/mtk_fpsgo/parameters/fstb_consider_deq
     chmod 0660 /sys/module/mtk_fpsgo/parameters/fstb_consider_deq
+    chown system system /sys/module/mtk_fpsgo/parameters/fstb_no_r_timer_enable
+    chmod 0660 /sys/module/mtk_fpsgo/parameters/fstb_no_r_timer_enable
     chown system system /sys/kernel/fpsgo/fstb/tfps_to_powerhal_enable
     chmod 0660 /sys/kernel/fpsgo/fstb/tfps_to_powerhal_enable
     chown system system /sys/kernel/fpsgo/fstb/set_video_pid
     chmod 0660 /sys/kernel/fpsgo/fstb/set_video_pid
     chown system system /sys/kernel/fpsgo/fstb/clear_video_pid
     chmod 0660 /sys/kernel/fpsgo/fstb/clear_video_pid
+    chown system system /sys/kernel/fpsgo/fstb/fstb_fps_bypass_min
+    chmod 0660 /sys/kernel/fpsgo/fstb/fstb_fps_bypass_min
 
 # NET
     chown system system /proc/net/wlan/setCAM

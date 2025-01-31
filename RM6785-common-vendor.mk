@@ -1464,6 +1464,7 @@ PRODUCT_PACKAGES += \
     salaa_qtech_main_s5kgm1sp_tuning \
     sarter_qtech_main_s5kgm1sp_IdxMgr \
     sarter_qtech_main_s5kgm1sp_tuning \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
     vendor.mediatek.hardware.apuware.utils@1.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.atci@1.0 \
@@ -1508,7 +1509,6 @@ PRODUCT_PACKAGES += \
     libvcodec_cap \
     libvcodec_capenc \
     libvt_avsync \
-    vendor.mediatek.hardware.apuware.apusys@1.0 \
     vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     liboemcrypto \
@@ -1611,7 +1611,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.apuware.apusys@1.0_vendor.mediatek.hardware.apuware.apusys@1.0_symlink64 \
     libGLES_mali_vulkan.mt6785_symlink64 \
     kmsetkey.trustonic_kmsetkey.default_symlink64 \
     libMcGatekeeper_gatekeeper.mt6785_symlink64 \
