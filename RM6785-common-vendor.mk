@@ -159,6 +159,16 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img \
     vendor/realme/RM6785-common/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img \
     vendor/realme/RM6785-common/proprietary/odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libavcodec.so:$(TARGET_COPY_OUT_ODM)/lib/libavcodec.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libavformat.so:$(TARGET_COPY_OUT_ODM)/lib/libavformat.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libavutil.so:$(TARGET_COPY_OUT_ODM)/lib/libavutil.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib/libdav1d.so.4 \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libffmpeg_omx.so:$(TARGET_COPY_OUT_ODM)/lib/libffmpeg_omx.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib/libffmpeg_utils.so:$(TARGET_COPY_OUT_ODM)/lib/libffmpeg_utils.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib64/libavcodec.so:$(TARGET_COPY_OUT_ODM)/lib64/libavcodec.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib64/libavformat.so:$(TARGET_COPY_OUT_ODM)/lib64/libavformat.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib64/libavutil.so:$(TARGET_COPY_OUT_ODM)/lib64/libavutil.so \
+    vendor/realme/RM6785-common/proprietary/odm/lib64/libdav1d.so.4:$(TARGET_COPY_OUT_ODM)/lib64/libdav1d.so.4 \
     vendor/realme/RM6785-common/proprietary/odm/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030b0000000000000000000000000000.drbin \
     vendor/realme/RM6785-common/proprietary/odm/vendor/app/mcRegistry/030b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030b0000000000000000000000000000.tlbin \
     vendor/realme/RM6785-common/proprietary/odm/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/030c0000000000000000000000000000.drbin \
@@ -210,6 +220,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/9073f03a9618383bb1856eb3f990babd.tlbin \
     vendor/realme/RM6785-common/proprietary/vendor/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/98fb95bcb4bf42d26473eae48690d7ea.tabin \
     vendor/realme/RM6785-common/proprietary/vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin \
+    vendor/realme/RM6785-common/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
+    vendor/realme/RM6785-common/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
+    vendor/realme/RM6785-common/proprietary/vendor/bin/recordevent:$(TARGET_COPY_OUT_VENDOR)/bin/recordevent \
+    vendor/realme/RM6785-common/proprietary/vendor/bin/replayevent:$(TARGET_COPY_OUT_VENDOR)/bin/replayevent \
+    vendor/realme/RM6785-common/proprietary/vendor/bin/vpud:$(TARGET_COPY_OUT_VENDOR)/bin/vpud \
     vendor/realme/RM6785-common/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
     vendor/realme/RM6785-common/proprietary/vendor/etc/.tp/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf \
@@ -411,7 +426,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
@@ -434,15 +448,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/etc/ipsec/ipsec.d/cacerts/thawte.der:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.d/cacerts/thawte.der \
     vendor/realme/RM6785-common/proprietary/vendor/etc/ipsec/ssl/openssl.cnf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ssl/openssl.cnf \
     vendor/realme/RM6785-common/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_mediatek_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_audio.xml \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/media_codecs_mediatek_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_mediatek_video.xml \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/realme/RM6785-common/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
+    vendor/realme/RM6785-common/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/realme/RM6785-common/proprietary/vendor/etc/ncf_pack.ncf:$(TARGET_COPY_OUT_VENDOR)/etc/ncf_pack.ncf \
     vendor/realme/RM6785-common/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
-    vendor/realme/RM6785-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785-common/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RM6785-common/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/realme/RM6785-common/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
@@ -644,7 +654,49 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785-common/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/realme/RM6785-common/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/realme/RM6785-common/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
-    vendor/realme/RM6785-common/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/realme/RM6785-common/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/realme/RM6785-common/proprietary/vendor/lib/libh264dec_customize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_customize.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib/libh264dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sa.ca7.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib/libh264dec_sd.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sd.ca7.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libMtkOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkOmxCore.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdk.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadpcmdec_mtk.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libakm.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_c2store.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_vdec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_mtk_venc.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_alacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_alacdec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_apedec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_apedec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_imaadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_imaadpcmdec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_mp3dec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_msadpcmdec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_soft_mtk_wmadec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_mtk_wmadec.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_qt_plugin.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vpp_rs_plugin.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libformatter.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libheichal.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libhwconfigurationutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwconfigurationutil.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libicd_decoder.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio_plat_drv.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio_plat_pipe.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmp3dec_mtk.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodec_oal.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodecdrv_header_stub.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
+    vendor/realme/RM6785-common/proprietary/vendor/lib64/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu5.so
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
@@ -665,7 +717,6 @@ PRODUCT_PACKAGES += \
     libOpenCL \
     libTEECommon \
     libaedv \
-    libbwc \
     libcapctrl \
     libcares_naptr \
     libcarrierconfig \
@@ -721,7 +772,6 @@ PRODUCT_PACKAGES += \
     libsysenv \
     liburee_meta_drmkeyinstall \
     libverno \
-    libvpu \
     libwo \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
@@ -743,24 +793,11 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.4 \
     vendor.mediatek.hardware.pq@2.5 \
     vendor.mediatek.hardware.pq@2.6 \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     audio.primary.mt6785 \
     audio.r_submix.mt6785 \
     audio.usb.mt6785 \
     sound_trigger.primary.mt6785 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     libDR \
-    libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxCore \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
-    libMtkOmxVdecEx \
-    libMtkOmxVenc \
-    libMtkOmxWmaDec \
     libMtkSpeechEnh \
     lib_iir \
     lib_speech_enh \
@@ -782,12 +819,6 @@ PRODUCT_PACKAGES += \
     libblisrc32_vendor \
     libcvsd_mtk \
     libfgauge_gm30 \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264dec_sd.ca7 \
-    libh264dec_se.ca7 \
-    libh264enc_sa.ca7 \
-    libhevce_sb.ca7.android \
     libktvdrc \
     libktveffect \
     libktveffect_rec \
@@ -797,8 +828,6 @@ PRODUCT_PACKAGES += \
     libktvsoundtouch \
     libktvvolume \
     libmnl \
-    libmp4enc_sa.ca7 \
-    libmp4enc_xa.ca7 \
     libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
@@ -806,15 +835,9 @@ PRODUCT_PACKAGES += \
     libsi_sixth \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libstagefrighthw \
     libstorage_otp \
     libthermalalgo \
-    libthha \
     libtlcWidevineModularDrm \
-    libvc1dec_sa.ca7 \
-    libvcodec_oal \
-    libvcodec_utility \
-    libvcodecdrv \
     libvolte_core_shr \
     libvolte_xdmc_shr \
     libvow_ap_testing_alexa.vendor \
@@ -822,15 +845,10 @@ PRODUCT_PACKAGES += \
     libvowp23_sid_training_alexa.vendor \
     libvowp25testing_alexa.vendor \
     libvowp2training_alexa.vendor \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
-    libvpud_vcodec \
     libvt_custom \
     libwvhidl \
     libwvdrmengine \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1 \
     APUWareApusysServer \
     APUWareUtilsServer \
     APUWareXrpServer \
@@ -1341,8 +1359,6 @@ PRODUCT_PACKAGES += \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
     libkmsetkey \
     libksensor \
     liblpcnr \
@@ -1540,6 +1556,7 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     manifest.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_media_c2_V1_1_default.xml \
     oplus_appradio_device_manifest.xml \
     oplus_radio_device_manifest.xml \
     atcid \
@@ -1571,14 +1588,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keyinstall@1.0-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mms@1.5-service \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor.mediatek.hardware.mtkpower@1.0-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     ipsec_mon \
-    jpegtool \
     lbs_hidl_service \
     mcDriverDaemon \
     md_monitor \
@@ -1601,7 +1616,6 @@ PRODUCT_PACKAGES += \
     volte_md_status \
     volte_stack \
     volte_ua \
-    vpud \
     wfca \
     wlan_assistant \
     wmt_launcher \
